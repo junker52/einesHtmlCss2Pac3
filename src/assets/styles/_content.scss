@@ -9,6 +9,7 @@
   }
 }
 
+/*About me rules SCSS*/
 .about-me {
   &--img {
     @extend .img__responsive;
@@ -25,10 +26,107 @@
     text-transform: capitalize;
   }
   &--paragraph {
-    font-size: 1em;
+    font-size: $spacer;
     line-height: $spacer * 1.5;
     margin-bottom: $spacer / 2;
     text-align: justify;
+  }
+}
+
+/*Academics rules SCSS*/
+.academics {
+  @include inverse-bg;
+  color: $color5;
+  padding: $spacer * 4 0;
+
+  .icon {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  &--row {
+    @extend .row;
+    padding: 2em 0;
+  }
+
+  &--summary {
+    @extend .col__vertical-venter;
+    text-align: center;
+    font-size: $spacer * 1.2;
+    font-style: italic;
+  }
+  &--description {
+    text-align: justify;
+    font-size: $spacer;
+    line-height: $spacer * 1.5;
+    margin-bottom: $spacer;
+  }
+  &--divider {
+    width: 80%;
+    margin: 0 auto;
+    height: 5px;
+    background-color: $color5;
+    @include border-radius(50px);
+  }
+}
+
+/*Professional experiences rules SCSS*/
+.professional {
+  @include light-bg;
+  padding: $spacer * 4 0;
+
+  .icon {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .entreprise-logo {
+    max-width: 12em;
+  }
+
+  &--row {
+    @extend .row;
+    padding: 2em 0;
+  }
+
+  &--summary {
+    @extend .col__vertical-venter;
+    text-align: center;
+    font-size: $spacer * 1.2;
+    font-style: italic;
+  }
+  &--description {
+    text-align: justify;
+    font-size: $spacer;
+    line-height: $spacer * 1.5;
+    margin-bottom: $spacer;
+  }
+  &--divider {
+    width: 80%;
+    margin: 0 auto;
+    height: 5px;
+    @include inverse-bg;
+    @include border-radius(50px);
+  }
+}
+
+/*Footer rules SCSS*/
+.footer {
+  @include inverse-bg;
+  padding: 0;
+  margin-bottom: 0;
+  color: $color5;
+  &--row {
+    @extend .row;
+    padding: $spacer 0;
+    text-align: center;
+
+  }
+
+  &--text {
+    text-align: center;
+    font-size: $spacer;
+    font-style: italic;
   }
 }
 

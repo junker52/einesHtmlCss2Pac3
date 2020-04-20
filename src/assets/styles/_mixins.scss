@@ -13,3 +13,15 @@
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
 }
+
+@mixin border-bottom($size, $color) {
+	border-bottom: $size solid $color;
+}
+
+@mixin inverse-bg {
+  background-color: lighten($color1, 20);
+}
+
+@mixin light-bg {
+  background-color: lighten($color5, 20);
+}

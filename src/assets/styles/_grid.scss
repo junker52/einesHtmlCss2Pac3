@@ -22,6 +22,7 @@
 
 @for $i from 1 through $grid--cols {
   .col-#{$i} {
+    text-align: center;
     flex-basis: (100 / ($grid--cols / $i) ) * 1%;
     padding: $cols--spacer;
   }
@@ -33,6 +34,7 @@
 @media screen and (min-width: $grid--breakpoint__sm) {
   @for $i from 1 through $grid--cols {
     .col-sm-#{$i} {
+      text-align: center;
       flex-basis: (100 / ($grid--cols / $i) ) * 1%;
       padding: $cols--spacer;
     }
@@ -46,6 +48,7 @@
 @media screen and (min-width: $grid--breakpoint__md) {
   @for $i from 1 through $grid--cols {
     .col-md-#{$i} {
+      text-align: center;
       flex-basis: (100 / ($grid--cols / $i) ) * 1%;
       padding: $cols--spacer;
     }
@@ -59,6 +62,7 @@
 @media screen and (min-width: $grid--breakpoint__lg) {
   @for $i from 1 through $grid--cols {
     .col-lg-#{$i} {
+      text-align: center;
       flex-basis: (100 / ($grid--cols / $i) ) * 1%;
       padding: $cols--spacer;
     }
@@ -78,5 +82,4 @@
   padding: 1em 2em;
   margin: 2em 0;
 }
-
 
