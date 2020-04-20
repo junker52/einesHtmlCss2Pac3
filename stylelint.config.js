@@ -11,19 +11,8 @@ module.exports = {
     "no-eol-whitespace": null,
     "declaration-empty-line-before": null,
     "value-keyword-case": null,
-    "at-rule-no-unknown": [
-      true,
-      {
-        "ignoreAtRules": [
-          "tailwind",
-          "apply",
-          "responsive",
-          "variants",
-          "screen",
-          "use"
-        ]
-      }
-    ],
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
     "plugin/selector-bem-pattern": {
       "componentName": "[A-Z]+",
       "componentSelectors": {

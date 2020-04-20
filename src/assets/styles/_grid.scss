@@ -19,7 +19,6 @@
   width: inherit;
 }
 
-
 @for $i from 1 through $grid--cols {
   .col-#{$i} {
     text-align: center;
@@ -82,4 +81,3 @@
   padding: 1em 2em;
   margin: 2em 0;
 }
-

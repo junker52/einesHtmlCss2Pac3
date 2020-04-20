@@ -9,13 +9,13 @@
 }
 
 @mixin border-radius($radius) {
-	border-radius: $radius;
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
 }
 
 @mixin border-bottom($size, $color) {
-	border-bottom: $size solid $color;
+  border-bottom: $size solid $color;
 }
 
 @mixin inverse-bg {
