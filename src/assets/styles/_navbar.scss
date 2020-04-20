@@ -1,0 +1,29 @@
+@import 'mixins';
+@import 'variables';
+
+.navbar--container {
+  border-bottom: 2px solid $color2;
+  background-color: $color2;
+  color: $color5;
+  padding: 0.5em;
+  padding-bottom: 0;
+  margin-bottom: 1.5em;
+  @include box-shadow(0, 15px, 10px);
+}
+
+.navbar--row {
+  display: flex;
+  justify-content: center;
+  .navbar-brand {
+    font-family: 'Comic Neue', cursive;
+    font-weight: bolder;
+    font-size: 1.3em;
+  }
+  .navbar--element {
+    cursor: pointer;
+    @include padding($spacer * 2, $spacer);
+    &:hover {
+      color: $color1;
+    }
+  }
+}

@@ -41,5 +41,8 @@
     "stylelint-scss": "^3.17.0",
     "stylelint-selector-bem-pattern": "^2.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "font-awesome": "^4.7.0"
+  }
 }

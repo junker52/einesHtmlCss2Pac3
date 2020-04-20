@@ -1,0 +1,35 @@
+.img {
+  &__responsive {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  &__rounded {
+    @include border-radius(0.4em);
+  }
+}
+
+.about-me {
+  &--img {
+    @extend .img__responsive;
+    @extend .img__rounded;
+  }
+  &--description {
+    @extend .col__vertical-venter;
+    padding: 0 3em;
+  }
+  &--title {
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-bottom: $spacer;
+    text-transform: capitalize;
+  }
+  &--paragraph {
+    font-size: 1em;
+    line-height: $spacer * 1.5;
+    margin-bottom: $spacer / 2;
+    text-align: justify;
+  }
+}
+
+

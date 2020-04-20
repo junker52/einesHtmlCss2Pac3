@@ -10,6 +10,5 @@
  * Write any other JavaScript below
  */
 
-+( function() {
-  console.log('Hello, UOC!');
-} )();
+
+
