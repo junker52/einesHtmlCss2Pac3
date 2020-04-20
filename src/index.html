@@ -9,13 +9,13 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>Ricard Molina</title>
   </head>
-  <body>
+  <body id="page">
     <!--Nav Section-->
     <nav class="navbar--container">
         <div class="navbar--row">
-            <div class="navbar--element"><strong class="navbar-brand">Ricard</strong></div>
-            <div class="navbar--element">Academics</div>
-            <div class="navbar--element">Professional</div>
+            <a data-scroll href="#page"><div class="navbar--element"><strong class="navbar-brand">Ricard</strong></div></a>
+            <a data-scroll href="#academics"><div class="navbar--element">Academics</div></a>
+            <a data-scroll href="#professional"><div class="navbar--element">Professional</div></a>
         </div>
     </nav>
     <!--About me Section-->
@@ -34,7 +34,7 @@
         </div>
     </section>
     <!--Academics Section-->
-    <section class="academics section">
+    <section class="academics section" id="academics">
         <div class="academics--row">
             <div class="col-10 academics--icon">
                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -80,7 +80,7 @@
         </div>
     </section>
     <!--Professional Section-->
-    <section class="professional section">
+    <section class="professional section" id="professional">
         <div class="professional--row">
             <div class="col-10 professional--icon">
                 <i class="fa fa-briefcase" aria-hidden="true"></i>
