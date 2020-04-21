@@ -1,35 +1,38 @@
+/** @define img */
 .img {
-  &__responsive {
+  &--responsive {
     width: 100%;
     margin: 0 auto;
     height: auto;
   }
 
-  &__rounded {
+  &--rounded {
     @include border-radius(0.4em);
   }
 }
 
 /* About me rules SCSS */
+
+/** @define about-me */
 .about-me {
-  &--img {
-    @extend .img__responsive;
-    @extend .img__rounded;
+  &__img {
+    @extend .img--responsive;
+    @extend .img--rounded;
   }
 
-  &--description {
+  &__description {
     @extend .col__vertical-venter;
     padding: 0 3em;
   }
 
-  &--title {
+  &__title {
     font-size: 1.3em;
     font-weight: bolder;
     margin-bottom: $spacer;
     text-transform: capitalize;
   }
 
-  &--paragraph {
+  &__paragraph {
     font-size: $spacer;
     line-height: $spacer * 1.5;
     margin-bottom: $spacer / 2;
@@ -38,36 +41,38 @@
 }
 
 /* Academics rules SCSS */
+
+/** @define academics */
 .academics {
   @include inverse-bg;
   color: $color5;
   padding: $spacer * 4 0;
 
-  &--icon {
+  &__icon {
     text-align: center;
     font-size: 4em;
   }
 
-  &--row {
+  &__row {
     @extend .row;
     padding: 2em 0;
   }
 
-  &--summary {
+  &__summary {
     @extend .col__vertical-venter;
     text-align: center;
     font-size: $spacer * 1.2;
     font-style: italic;
   }
 
-  &--description {
+  &__description {
     text-align: justify;
     font-size: $spacer;
     line-height: $spacer * 1.5;
     margin-bottom: $spacer;
   }
 
-  &--divider {
+  &__divider {
     @include border-radius(50px);
     width: 80%;
     margin: 0 auto;
@@ -77,39 +82,41 @@
 }
 
 /* Professional experiences rules SCSS */
+
+/** @define professional */
 .professional {
   @include light-bg;
   padding: $spacer * 4 0;
 
-  &--icon {
+  &__icon {
     text-align: center;
     font-size: 4em;
   }
 
-  &--logo {
+  &__logo {
     max-width: 12em;
   }
 
-  &--row {
+  &__row {
     @extend .row;
     padding: 2em 0;
   }
 
-  &--summary {
+  &__summary {
     @extend .col__vertical-venter;
     text-align: center;
     font-size: $spacer * 1.2;
     font-style: italic;
   }
 
-  &--description {
+  &__description {
     text-align: justify;
     font-size: $spacer;
     line-height: $spacer * 1.5;
     margin-bottom: $spacer;
   }
 
-  &--divider {
+  &__divider {
     @include inverse-bg;
     @include border-radius(50px);
     width: 80%;
@@ -119,19 +126,21 @@
 }
 
 /* Footer rules SCSS */
+
+/** @define footer */
 .footer {
   @include inverse-bg;
   padding: 0;
   margin-bottom: 0;
   color: $color5;
 
-  &--row {
+  &__row {
     @extend .row;
     padding: $spacer 0;
     text-align: center;
   }
 
-  &--text {
+  &__text {
     text-align: center;
     font-size: $spacer;
     font-style: italic;

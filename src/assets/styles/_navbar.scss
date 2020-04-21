@@ -1,7 +1,7 @@
 @import 'mixins';
 @import 'variables';
 
-.navbar--container {
+.navbar__container {
   @include inverse-bg;
   @include box-shadow(0, 15px, 10px);
   border-bottom: 2px solid $color2;
@@ -11,7 +11,7 @@
   margin-bottom: 1.5em;
 }
 
-.navbar--row {
+.navbar__row {
   display: flex;
   justify-content: center;
 }
@@ -22,7 +22,7 @@
   font-size: 1.3em;
 }
 
-.navbar--element {
+.navbar__element {
   @include padding($spacer * 2, $spacer);
   cursor: pointer;
 

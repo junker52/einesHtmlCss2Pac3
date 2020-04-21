@@ -14,12 +14,7 @@ module.exports = {
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
     "plugin/selector-bem-pattern": {
-      "componentName": "[A-Z]+",
-      "componentSelectors": {
-        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
-        "combined": "^\\.combined-{componentName}-[a-z]+$"
-      },
-      "utilitySelectors": "^\\.util-[a-z]+$"
+      'preset': 'bem'
     }
   }
 }

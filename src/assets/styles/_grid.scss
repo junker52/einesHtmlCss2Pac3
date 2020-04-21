@@ -1,12 +1,12 @@
 @import 'variables';
 
 .container {
-  max-width: $grid--breakpoint__md;
+  max-width: $grid__breakpoint--md;
   margin: 0 auto;
   padding: $spacer;
 }
 
-.container__full {
+.container--full {
   padding: $spacer;
   width: 100%;
   margin: 0 auto;
@@ -19,55 +19,55 @@
   width: inherit;
 }
 
-@for $i from 1 through $grid--cols {
+@for $i from 1 through $grid__cols {
   .col-#{$i} {
     text-align: center;
-    flex-basis: (100 / ($grid--cols / $i) ) * 1%;
+    flex-basis: (100 / ($grid__cols / $i) ) * 1%;
     padding: $cols--spacer;
   }
   .col__offset-#{$i} {
-    margin-left: (100 / ($grid--cols / $i) ) * 1%;
+    margin-left: (100 / ($grid__cols / $i) ) * 1%;
   }
 }
 
-@media screen and (min-width: $grid--breakpoint__sm) {
-  @for $i from 1 through $grid--cols {
+@media screen and (min-width: $grid__breakpoint--sm) {
+  @for $i from 1 through $grid__cols {
     .col-sm-#{$i} {
       text-align: center;
-      flex-basis: (100 / ($grid--cols / $i) ) * 1%;
+      flex-basis: (100 / ($grid__cols / $i) ) * 1%;
       padding: $cols--spacer;
     }
 
     .col-sm__offset-#{$i} {
-      margin-left: (100 / ($grid--cols / $i) ) * 1%;
+      margin-left: (100 / ($grid__cols / $i) ) * 1%;
     }
   }
 }
 
-@media screen and (min-width: $grid--breakpoint__md) {
-  @for $i from 1 through $grid--cols {
+@media screen and (min-width: $grid__breakpoint--md) {
+  @for $i from 1 through $grid__cols {
     .col-md-#{$i} {
       text-align: center;
-      flex-basis: (100 / ($grid--cols / $i) ) * 1%;
+      flex-basis: (100 / ($grid__cols / $i) ) * 1%;
       padding: $cols--spacer;
     }
 
     .col-md__offset-#{$i} {
-      margin-left: (100 / ($grid--cols / $i) ) * 1%;
+      margin-left: (100 / ($grid__cols / $i) ) * 1%;
     }
   }
 }
 
-@media screen and (min-width: $grid--breakpoint__lg) {
-  @for $i from 1 through $grid--cols {
+@media screen and (min-width: $grid__breakpoint--lg) {
+  @for $i from 1 through $grid__cols {
     .col-lg-#{$i} {
       text-align: center;
-      flex-basis: (100 / ($grid--cols / $i) ) * 1%;
+      flex-basis: (100 / ($grid__cols / $i) ) * 1%;
       padding: $cols--spacer;
     }
 
     .col-lg__offset-#{$i} {
-      margin-left: (100 / ($grid--cols / $i) ) * 1%;
+      margin-left: (100 / ($grid__cols / $i) ) * 1%;
     }
   }
 }
@@ -77,7 +77,7 @@
 }
 
 .section {
-  @extend .container__full;
+  @extend .container--full;
   padding: 1em 2em;
   margin: 2em 0;
 }

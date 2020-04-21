@@ -9,8 +9,8 @@ $color5: #dad8db;
 $spacer: 1em;
 
 /* Grid */
-$grid--cols : 10;
-$grid--breakpoint__sm: 550px;
-$grid--breakpoint__md: 750px;
-$grid--breakpoint__lg: 1100px;
+$grid__cols : 10;
+$grid__breakpoint--sm: 550px;
+$grid__breakpoint--md: 750px;
+$grid__breakpoint--lg: 1100px;
 $cols--spacer: $spacer / 2;
