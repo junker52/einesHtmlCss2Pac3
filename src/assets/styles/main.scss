@@ -1,2 +1,7 @@
 @import 'variables';
+@import 'mixins';
+
+/* Bootstrap import */
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import 'home';
 @import 'root';

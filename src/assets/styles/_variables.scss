@@ -1,12 +1,20 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Righteous|Montserrat|Indie+Flower:200,300,400,700);
+$headings-font-family:Montserrat;
+
 /* Colors */
-$color1: #262932;
-$color2: #485d83;
-$color3: #5f89ba;
-$color4: #96afce;
-$color5: #dad8db;
+$primary:#0E0E0E;
+$secondary:#555555;
+$success:rgb(31, 94, 7);
+$danger:rgb(105, 23, 33);
+$info:#899CA5;
+$warning:rgb(151, 140, 34);
+$light:#A8A8A8;
+$dark:#3F3F47;
 
 /* Spacing */
 $spacer: 1em;
+$btn-spacer: 1.1em;
 
 /* Grid */
 $grid__cols : 10;
@@ -14,3 +22,14 @@ $grid__breakpoint--sm: 550px;
 $grid__breakpoint--md: 750px;
 $grid__breakpoint--lg: 1100px;
 $cols--spacer: $spacer / 2;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+/* Navbar */
+$navbar-collapse-bk: map-get($grid-breakpoints, "md");
