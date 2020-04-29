@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'mixins';
+
+.actors-card {
+  padding: $spacer * 2;
+}
+
+.actors-card__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: $spacer * 1.5;
+
+  @include border-radius(50%);
+}
+
+.actors-card__name {
+  font-size: $spacer * 1.4;
+  font-weight: 300;
+}
+
+.actors-card__birthdate {
+  font-size: $spacer * 0.8;
+  font-style: italic;
+  padding-bottom: $spacer;
+}
+
+.actors-card__description {
+  font-size: $spacer;
+  line-height: $spacer * 1.3;
+}

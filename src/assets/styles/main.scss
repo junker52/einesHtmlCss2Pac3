@@ -3,5 +3,7 @@
 
 /* Bootstrap import */
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+@import 'custom-grid';
 @import 'home';
+@import 'staff';
 @import 'root';
