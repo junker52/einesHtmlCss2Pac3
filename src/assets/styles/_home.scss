@@ -9,6 +9,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  display: flex;
+  flex-wrap: wrap;
+
   @supports (display: grid) {
     display: grid;
     grid-template-rows: 13% 75% 12%;
@@ -23,44 +26,33 @@
       grid-template-areas: 'navbar' 'content' 'footer';
     }
   }
-
-  @supports not (display: grid) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .site-navbar {
+  flex-basis: 100%;
+
   @supports (display: grid) {
     grid-area: navbar;
-  }
-
-  @supports not (display: grid) {
-    flex-basis: 100%;
   }
 }
 
 .site-content {
-  @supports (display: grid) {
-    grid-area: content;
+  flex-basis: 50%;
+
+  @media only screen and (max-width: $navbar-collapse-bk) {
+    flex-basis: 100%;
   }
 
-  @supports not (display: grid) {
-    flex-basis: 50%;
-
-    @media only screen and (max-width: $navbar-collapse-bk) {
-      flex-basis: 100%;
-    }
+  @supports (display: grid) {
+    grid-area: content;
   }
 }
 
 .site-footer {
+  flex-basis: 100%;
+
   @supports (display: grid) {
     grid-area: footer;
-  }
-
-  @supports not (display: grid) {
-    flex-basis: 100%;
   }
 }
 
