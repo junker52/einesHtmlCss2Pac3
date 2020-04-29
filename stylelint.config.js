@@ -12,6 +12,7 @@ module.exports = {
     "declaration-empty-line-before": null,
     "value-keyword-case": null,
     "at-rule-no-unknown": null,
+    "color-hex-case": "upper",
     "scss/at-rule-no-unknown": true,
     "plugin/selector-bem-pattern": {
       'preset': 'bem'

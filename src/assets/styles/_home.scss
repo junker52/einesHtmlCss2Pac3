@@ -1,159 +1,180 @@
 @import 'variables';
 @import 'mixins';
 
-/* Grid Home Design */
-@supports (display: grid) {
-  .home-container {
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/bg-home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @supports (display: grid) {
     display: grid;
-    width: 100%;
-    min-height: 100vh;
-
     grid-template-rows: 13% 75% 12%;
-
-    /* Image */
-    background-image: url("../images/bg-home.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
     grid-template-columns: 50% 50%;
     grid-template-areas:
-          'navbar navbar'
-          'content ....'
-          'footer footer';
+      'navbar navbar'
+      'content ....'
+      'footer footer';
 
-    /* Grid Areas */
     @media only screen and (max-width: $navbar-collapse-bk) {
       grid-template-columns: 100%;
       grid-template-areas: 'navbar' 'content' 'footer';
     }
   }
 
-  .site-navbar {
+  @supports not (display: grid) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.site-navbar {
+  @supports (display: grid) {
     grid-area: navbar;
   }
 
-  .site-content {
+  @supports not (display: grid) {
+    flex-basis: 100%;
+  }
+}
+
+.site-content {
+  @supports (display: grid) {
     grid-area: content;
   }
 
-  .site-footer {
+  @supports not (display: grid) {
+    flex-basis: 50%;
+
+    @media only screen and (max-width: $navbar-collapse-bk) {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.site-footer {
+  @supports (display: grid) {
     grid-area: footer;
   }
 
-  /* Bootstrap Navbar Customization */
-  .navbar {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    color: $secondary;
-    font-weight: 400;
-    background: transparent;
+  @supports not (display: grid) {
+    flex-basis: 100%;
   }
+}
 
-  .navbar-brand {
-    font-family: 'Righteous', cursive;
-    font-size: 2rem;
-    margin-right: $spacer;
+/* Bootstrap Navbar Customization */
+.navbar {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  color: $secondary;
+  font-weight: 400;
+  background: transparent;
+}
 
-    &:hover {
-      @include hover($secondary);
-    }
+.navbar-brand {
+  font-family: 'Righteous', cursive;
+  font-size: 2rem;
+  margin-right: $spacer;
+
+  &:hover {
+    @include hover($secondary);
   }
+}
 
-  .nav-link {
-    font-size: 1.3em;
-    margin-right: $spacer;
+.nav-link {
+  font-size: 1.3em;
+  margin-right: $spacer;
 
-    &:hover {
-      @include hover($secondary);
-    }
+  &:hover {
+    @include hover($secondary);
   }
+}
 
-  .navbar-toggler,
-  .navbar-toggler-icon {
-    font-size: $spacer * 1.1;
-    color: $secondary;
+.navbar-toggler,
+.navbar-toggler-icon {
+  font-size: $spacer * 1.1;
+  color: $secondary;
 
-    &:active,
-    &:focus {
-      outline: none;
-      box-shadow: none;
-    }
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
+}
 
-  .navbar-collapse {
-    width: 100%;
+.navbar-collapse {
+  width: 100%;
 
-    @media only screen and (max-width: $navbar-collapse-bk) {
-      background-color: $black;
-    }
+  @media only screen and (max-width: $navbar-collapse-bk) {
+    background-color: $black;
   }
+}
 
-  /* next-spectacle */
+/* next-spectacle */
 
-  .next-spectacle {
-    @extend .text-center, .text-md-left;
-    padding: $spacer * 2;
-    background-color: lighten($secondary, 15);
-    color: darken($dark, 10);
-    font-weight: 200;
-    opacity: 0.9;
+.next-spectacle {
+  @extend .text-center, .text-md-left;
+  padding: $spacer * 2;
+  background-color: lighten($secondary, 15);
+  color: darken($dark, 10);
+  font-weight: 200;
+  opacity: 0.9;
 
-    @include border-radius($spacer);
-  }
+  @include border-radius($spacer);
+}
 
-  .next-spectacle__title {
-    font-size: $spacer * 3;
-    font-family: 'Indie Flower', cursive;
-  }
+.next-spectacle__title {
+  font-size: $spacer * 3;
+  font-family: 'Indie Flower', cursive;
+}
 
-  .next-spectacle__description {
-    font-size: $spacer * 1.1;
-    line-height: $spacer * 1.5;
-    text-align: justify;
-  }
+.next-spectacle__description {
+  font-size: $spacer * 1.1;
+  line-height: $spacer * 1.5;
+  text-align: justify;
+}
 
-  .next-spectacle__place-date {
-    font-style: italic;
-    font-size: $spacer * 0.9;
-    text-align: left;
-    color: lighten($dark, 2);
-  }
+.next-spectacle__place-date {
+  font-style: italic;
+  font-size: $spacer * 0.9;
+  text-align: left;
+  color: lighten($dark, 2);
+}
 
-  .next-spectacle__buy-button {
-    @extend .btn, .btn-outline-primary;
+.next-spectacle__buy-button {
+  @extend .btn, .btn-outline-primary;
 
-    @include border-radius($spacer);
-    @include button-padding($spacer, $spacer);
-    font-size: $spacer * 1.1;
-    font-weight: bolder;
-  }
+  @include border-radius($spacer);
+  @include button-padding($spacer, $spacer);
+  font-size: $spacer * 1.1;
+  font-weight: bolder;
+}
 
-  .next-spectacle__icon {
-    font-size: $spacer * 1.4;
-    padding-right: $spacer / 2;
-  }
+.next-spectacle__icon {
+  font-size: $spacer * 1.4;
+  padding-right: $spacer / 2;
+}
 
-  /* footer */
-  .home-footer {
-    @extend .col-12;
+/* footer */
+.home-footer {
+  @extend .col-12;
 
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  .home-footer__icon {
-    color: $secondary;
-    font-size: $spacer * 2.5;
-    padding-right: $spacer / 2.5;
-    cursor: pointer;
-  }
+.home-footer__icon {
+  color: $secondary;
+  font-size: $spacer * 2.5;
+  padding-right: $spacer / 2.5;
+  cursor: pointer;
+}
 
-  .home-footer__copyright-text {
-    font-style: italic;
-    font-weight: bolder;
-    font-size: $spacer 0.8;
-    color: lighten($secondary, 30);
-    margin: 0;
-  }
-
+.home-footer__copyright-text {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: $spacer 0.8;
+  color: lighten($secondary, 30);
+  margin: 0;
 }
