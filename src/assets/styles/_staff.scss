@@ -1,6 +1,12 @@
 @import 'variables';
 @import 'mixins';
 
+.actors-title {
+  font-size: $spacer * 3;
+  font-weight: 300;
+  line-height: 1.2 * $spacer;
+}
+
 .actors-card {
   padding: $spacer * 2;
 }

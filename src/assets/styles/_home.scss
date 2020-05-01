@@ -82,6 +82,10 @@
   &:hover {
     @include hover($secondary);
   }
+
+  &.active {
+    @include hover($secondary);
+  }
 }
 
 .navbar-toggler,
@@ -167,6 +171,7 @@
   font-style: italic;
   font-weight: bolder;
   font-size: $spacer 0.8;
+  padding-bottom: $spacer / 2;
   color: lighten($secondary, 30);
   margin: 0;
 }
