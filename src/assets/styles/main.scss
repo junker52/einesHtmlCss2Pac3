@@ -5,8 +5,9 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
 /* Content */
+@import 'root';
 @import 'custom-grid';
 @import 'home';
 @import 'staff';
 @import 'about-us';
-@import 'root';
+@import 'multimedia';

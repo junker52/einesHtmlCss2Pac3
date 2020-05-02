@@ -1,0 +1,21 @@
+@import 'variables';
+
+.multimedia__title {
+  @extend .actors-title;
+}
+
+.multimedia__paragraph {
+  @extend .about-us__paragraph;
+}
+
+.multimedia__video {
+  @extend .embed-responsive, .embed-responsive-16by9;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.carrousel-img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
