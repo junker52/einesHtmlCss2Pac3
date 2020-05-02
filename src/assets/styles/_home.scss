@@ -108,6 +108,14 @@
   }
 }
 
+.custom-collapse {
+  @extend .collapse;
+  z-index: 10;
+  padding: 0 $spacer;
+
+  @include border-radius($spacer);
+}
+
 /* next-spectacle */
 
 .next-spectacle {
