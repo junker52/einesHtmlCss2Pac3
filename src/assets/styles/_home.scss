@@ -71,7 +71,7 @@
   margin-right: $spacer;
 
   &:hover {
-    @include hover($secondary);
+    color: darken($secondary, 15);
   }
 }
 
