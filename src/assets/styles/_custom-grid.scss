@@ -1,17 +1,17 @@
 @import 'variables';
 
-.staff-container {
+.pac-container {
   max-width: $grid__breakpoint--lg;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-.staff-container--full {
+.pac-container--full {
   width: 100%;
   margin: 0 auto;
 }
 
-.staff-row {
+.pac-row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -20,12 +20,12 @@
 }
 
 @for $i from 1 through $grid__cols {
-  .staff-col-#{$i} {
+  .pac-col-#{$i} {
     padding: $col-gap;
     text-align: center;
     flex-basis: (100 / ($grid__cols / $i) ) * 1%;
   }
-  .staff-col__offset-#{$i} {
+  .pac-col__offset-#{$i} {
     padding: $col-gap;
     margin-left: (100 / ($grid__cols / $i) ) * 1%;
   }
@@ -33,13 +33,13 @@
 
 @media screen and (min-width: $grid__breakpoint--sm) {
   @for $i from 1 through $grid__cols {
-    .staff-col-sm-#{$i} {
+    .pac-col-sm-#{$i} {
       padding: $col-gap;
       text-align: center;
       flex-basis: (100 / ($grid__cols / $i) ) * 1%;
     }
 
-    .staff-col-sm__offset-#{$i} {
+    .pac-col-sm__offset-#{$i} {
       padding: $col-gap;
       margin-left: (100 / ($grid__cols / $i) ) * 1%;
     }
@@ -48,13 +48,13 @@
 
 @media screen and (min-width: $grid__breakpoint--md) {
   @for $i from 1 through $grid__cols {
-    .staff-col-md-#{$i} {
+    .pac-col-md-#{$i} {
       padding: $col-gap;
       text-align: center;
       flex-basis: (100 / ($grid__cols / $i) ) * 1%;
     }
 
-    .staff-col-md__offset-#{$i} {
+    .pac-col-md__offset-#{$i} {
       padding: $col-gap;
       margin-left: (100 / ($grid__cols / $i) ) * 1%;
     }
@@ -63,19 +63,19 @@
 
 @media screen and (min-width: $grid__breakpoint--lg) {
   @for $i from 1 through $grid__cols {
-    .staff-col-lg-#{$i} {
+    .pac-col-lg-#{$i} {
       padding: $col-gap;
       text-align: center;
       flex-basis: (100 / ($grid__cols / $i) ) * 1%;
     }
 
-    .staff-col-lg__offset-#{$i} {
+    .pac-col-lg__offset-#{$i} {
       padding: $col-gap;
       margin-left: (100 / ($grid__cols / $i) ) * 1%;
     }
   }
 }
 
-.staff-col__vertical-venter {
+.pac-col__vertical-venter {
   align-self: center;
 }

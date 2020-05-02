@@ -56,65 +56,6 @@
   }
 }
 
-/* Bootstrap Navbar Customization */
-.navbar {
-  padding-left: 2.5em;
-  padding-right: 2.5em;
-  color: $secondary;
-  font-weight: 400;
-  background: transparent;
-}
-
-.navbar-brand {
-  font-family: 'Righteous', cursive;
-  font-size: 2rem;
-  margin-right: $spacer;
-
-  &:hover {
-    color: darken($secondary, 15);
-  }
-}
-
-.nav-link {
-  font-size: 1.3em;
-  margin-right: $spacer;
-
-  &:hover {
-    @include hover($secondary);
-  }
-
-  &.active {
-    @include hover($secondary);
-  }
-}
-
-.navbar-toggler,
-.navbar-toggler-icon {
-  font-size: $spacer * 1.1;
-  color: $secondary;
-
-  &:active,
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-}
-
-.navbar-collapse {
-  width: 100%;
-
-  @media only screen and (max-width: $navbar-collapse-bk) {
-    background-color: $black;
-  }
-}
-
-.custom-collapse {
-  @extend .collapse;
-  z-index: 10;
-  padding: 0 $spacer;
-
-  @include border-radius($spacer);
-}
 
 /* next-spectacle */
 
