@@ -4,19 +4,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>The Caramba 2.0</title>
   </head>
   <body>
-    <img src="assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-
+    <nav class="navbar">
+        <div class="navbar__brand">
+          <span>The Caramba</span>
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 rounded text-primary hover:text-gray-800 outline-none hover:outline-none">
+              <i class="fa fa-bars text-xl" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow ">
+            <a href="actors.html" class="navbar__item navbar__item--active">
+              Actors
+            </a>
+            <a href="multimedia.html" class="navbar__item">
+              Multimedia
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Content -->
+      <div class="w-full flex justify-center mb-4 px-5">
+        <div class="w-full lg:w-1/2 bg-gray-500 mx-auto mt-8 rounded text-center shadow-lg px-3 py-5 box-content">
+            <p class="block text-gray-800 font-light tracking-wide leading-loose pb-4">Wellcome to <i>TheCaramba 2.0</i> in Tailwind CSS</p>
+            <i class="fa fa-wrench fa-4x text-gray-800" aria-hidden="true"></i>
+        </div>
+      </div>
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

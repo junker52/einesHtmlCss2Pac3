@@ -41,5 +41,7 @@
     "stylelint-scss": "^3.17.2",
     "tailwindcss": "^1.4.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
 }

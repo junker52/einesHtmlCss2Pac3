@@ -9,6 +9,7 @@ module.exports = {
     "no-descending-specificity": null,
     "no-eol-whitespace": null,
     "declaration-empty-line-before": null,
+    "declaration-block-trailing-semicolon": null,
     "value-keyword-case": null,
     "at-rule-no-unknown": [
       true,

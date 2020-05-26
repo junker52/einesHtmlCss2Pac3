@@ -1,0 +1,27 @@
+.navbar {
+  @apply flex items-center justify-between flex-wrap bg-transparent text-gray-600 p-6;
+}
+
+.navbar__brand {
+  @apply flex items-center flex-shrink-0 text-primary mr-6 text-3xl font-sans tracking-wide cursor-pointer;
+
+  &:hover {
+    @apply text-gray-900;
+  }
+}
+
+.navbar__item {
+  @apply mx-4 inline-block text-primary text-xl cursor-pointer;
+
+  &:hover {
+    @apply text-gray-800;
+
+    border-bottom: 2px solid theme('colors.gray.800');
+  }
+}
+
+.navbar__item--active {
+  @apply text-gray-800;
+
+  border-bottom: 2px solid theme('colors.gray.800');
+}
