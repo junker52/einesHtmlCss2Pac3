@@ -234,9 +234,11 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Righteous',
-        'Monserrat'
+        'Montserrat',
+        'sans-serif'
       ],
+      brand: ['Righteous',
+      'sans-serif'],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },

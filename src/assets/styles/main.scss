@@ -1,8 +1,10 @@
+@import "fonts";
+@import "variables";
+
 @tailwind base;
 @tailwind components;
 
-@import "fonts";
-@import "variables";
 @import "navbar";
+@import "actors";
 
 @tailwind utilities;

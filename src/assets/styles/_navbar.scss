@@ -1,9 +1,9 @@
 .navbar {
-  @apply flex items-center justify-between flex-wrap bg-transparent text-gray-600 p-6;
+  @apply flex items-center justify-between flex-wrap bg-transparent text-gray-600 p-5;
 }
 
 .navbar__brand {
-  @apply flex items-center flex-shrink-0 text-primary mr-6 text-3xl font-sans tracking-wide cursor-pointer;
+  @apply flex items-center flex-shrink-0 text-primary mr-6 text-3xl font-brand tracking-wide cursor-pointer;
 
   &:hover {
     @apply text-gray-900;
