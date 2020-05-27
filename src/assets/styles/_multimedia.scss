@@ -1,21 +1,24 @@
-@import 'variables';
-
 .multimedia__title {
-  @extend .actors-title;
+  @apply text-center text-5xl font-light mb-6;
 }
 
 .multimedia__paragraph {
-  @extend .about-us__paragraph;
+  @apply px-2 py-4 leading-8 text-justify tracking-wide;
 }
 
-.multimedia__video {
-  @extend .embed-responsive, .embed-responsive-16by9;
-  width: 70%;
-  margin: 0 auto;
+.multimedia__iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
 }
 
-.carrousel-img {
-  display: block;
-  width: 70%;
-  margin: 0 auto;
+.multimedia__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }

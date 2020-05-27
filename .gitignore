@@ -179,3 +179,4 @@ $RECYCLE.BIN/
 .cache
 .cache-loader
 dist
+.history

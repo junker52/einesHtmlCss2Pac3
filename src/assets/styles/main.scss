@@ -1,14 +1,11 @@
-@import 'variables';
-@import 'mixins';
+@import "fonts";
+@import "variables";
 
-/* Bootstrap import */
-@import '../../../node_modules/bootstrap/scss/bootstrap';
+@tailwind base;
+@tailwind components;
 
-/* Content */
-@import 'root';
-@import 'custom-grid';
-@import 'navbar';
-@import 'home';
-@import 'staff';
-@import 'about-us';
-@import 'multimedia';
+@import "navbar";
+@import "actors";
+@import "multimedia";
+
+@tailwind utilities;

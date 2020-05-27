@@ -1,62 +1,27 @@
-@import 'variables';
-@import 'mixins';
-
-/* Bootstrap Navbar Customization */
 .navbar {
-  padding-left: 2.5em;
-  padding-right: 2.5em;
-  color: $secondary;
-  font-weight: 400;
-  background: transparent;
+  @apply flex items-center justify-between flex-wrap bg-transparent text-gray-600 p-5;
 }
 
-.navbar-brand {
-  font-family: 'Righteous', cursive;
-  font-size: 2rem;
-  margin-right: $spacer;
+.navbar__brand {
+  @apply flex items-center flex-shrink-0 text-primary mr-6 text-4xl font-brand tracking-wide cursor-pointer;
 
   &:hover {
-    color: darken($secondary, 15);
+    @apply text-gray-900;
   }
 }
 
-.nav-link {
-  font-size: 1.3em;
-  margin-right: $spacer;
+.navbar__item {
+  @apply mx-4 inline-block text-primary text-xl cursor-pointer;
 
   &:hover {
-    @include hover($secondary);
-  }
+    @apply text-gray-800 font-semibold;
 
-  &.active {
-    @include hover($secondary);
+    border-bottom: 2px solid theme('colors.gray.800');
   }
 }
 
-.navbar-toggler,
-.navbar-toggler-icon {
-  font-size: $spacer * 1.1;
-  color: $secondary;
+.navbar__item--active {
+  @apply text-gray-800 font-semibold;
 
-  &:active,
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-}
-
-.navbar-collapse {
-  width: 100%;
-
-  @media only screen and (max-width: $navbar-collapse-bk) {
-    background-color: $black;
-  }
-}
-
-.custom-collapse {
-  @extend .collapse;
-  z-index: 10;
-  padding: 0 $spacer;
-
-  @include border-radius($spacer);
+  border-bottom: 2px solid theme('colors.gray.800');
 }

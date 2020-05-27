@@ -1,35 +1,8 @@
-/* Fonts */
-@import url(https://fonts.googleapis.com/css?family=Righteous|Montserrat|Indie+Flower:200,300,400,700);
-$headings-font-family:Montserrat;
+@use "sass:color";
 
-/* Colors */
-$primary:#0E0E0E;
-$secondary:#555;
-$success:rgb(31, 94, 7);
-$danger:rgb(105, 23, 33);
-$info:#899CA5;
-$warning:rgb(151, 140, 34);
-$light:#A8A8A8;
-$dark:#3F3F47;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
 
-/* Spacing */
-$spacer: 1em;
-$col-gap: 0.2em;
-$btn-spacer: 1.1em;
-
-/* Grid */
-$grid__cols : 12;
-$grid__breakpoint--sm: 550px;
-$grid__breakpoint--md: 750px;
-$grid__breakpoint--lg: 1100px;
-$cols--spacer: $spacer / 2;
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: $grid__breakpoint--sm,
-  md: $grid__breakpoint--md,
-  lg: $grid__breakpoint--lg
-);
-
-/* Navbar */
-$navbar-collapse-bk: map-get($grid-breakpoints, "md");
+$uoc-corporate: #000078;
+$uoc-masterbrand: #73edff;
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
