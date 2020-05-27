@@ -20,6 +20,7 @@ module.exports = {
           "responsive",
           "variants",
           "screen",
+          "extend",
           "use"
         ]
       }

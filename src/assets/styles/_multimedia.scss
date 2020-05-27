@@ -1,0 +1,24 @@
+.multimedia__title {
+  @apply text-center text-5xl font-light mb-6;
+}
+
+.multimedia__paragraph {
+  @apply px-2 py-4 leading-8 text-justify tracking-wide;
+}
+
+.multimedia__iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.multimedia__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
